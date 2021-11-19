@@ -1,3 +1,4 @@
+console.log("Welcome to The Address Book JS Program ") 
 class Contact
 {
     firstName;
@@ -88,5 +89,18 @@ class Contact
 
 }
 
-let contact1 = new Contact("Rajendra", "Gund", "Shirdi", "Ahmednagar", "Maharashtra",414501,9604315270,"rajendra@gmail.com");
-console.log(contact1)
+let contact1 = new Contact("Alankritha", "mallepogu", "srnagar", "hyderabad", "telangana","500038","91 9437545430","malankritha@gmail.com");
+let contact2 = new Contact("Shushant", "Lad", "Sangli", "sangli", "Maharashtra", "414004", "91 981656125", "shushant@gmail.com")
+let contact3 = new Contact("Megha", "Angadi", "Bagalkot", "Banglore", "Karnatka", "561004", "91 9851280202", "megha@gmail.com")
+
+var addressBookArray = new Array()
+addressBookArray.push(contact1)
+addressBookArray.push(contact2)
+addressBookArray.push(contact3)    
+
+for(let i = 0; i < addressBookArray.length; i++){
+    console.log(addressBookArray[i].toString())
+}
+    
+    
+       
